@@ -1,74 +1,291 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Atomic Houses</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <style>
 
-  </style>
+    <title>Atomic Houses</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <style>
+    </style>
 </head>
-<body>
 
-
- 
-<!-- NAVIGATION BAR -->
-  <ul class="nav justify-content-center nav-pills mt-5 mb-5" id="pills-tab" role="tablist">
-      <li class="nav-item rounded-0">
-        <a class="nav-link active rounded-0" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link rounded-0" id="pills-profile-tab" data-toggle="pill" href="#pills-events" role="tab" aria-controls="pills-profile" aria-selected="false">Events</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill" href="#pills-houses" role="tab" aria-controls="pills-contact" aria-selected="false">Houses</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-contact" aria-selected="false">About</a>
-      </li>
-  </ul>
+<body id="body">
 
 
 
-<!-- FOOTER -->
-  <div class="footer">
-      <p>Footer</p>
-  </div>
-
-<!-- CONTENT FOR EACH PAGE -->
-  <div class="tab-content" id="pills-tabContent">
-
-    <!-- PAGE 1 -->
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> CONTENT FOR THE PAGE 1 </div>
-    <!-- PAGE 1 -->
-
-
-    <!-- PAGE 2 -->
-    <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-profile-tab"> 
-      <p >CONTENT FOR THE PAGE 2 CONTENT FOR THE PAGE 2 CONTENT FOR THE PAGE 2 CONTENT FOR THE PAGE 2 CONTENT FOR THE PAGE 2 CONTENT FOR THE PAGE 2 </p>
-    </div>
-    <!-- PAGE 2 -->
-
-    <!-- PAGE 3 -->
-    <div class="tab-pane fade" id="pills-houses" role="tabpanel" aria-labelledby="pills-contact-tab"> CONTENT FOR THE PAGE 3 </div>
-    <!-- PAGE 3 -->
-
-    <!-- PAGE 4 -->
-     <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-contact-tab"> CONTENT FOR THE PAGE 4 </div>
-     <!-- PAGE 4 -->
-
-  </div>
-
-  
 
 
 
+
+
+
+
+    <div id="wrapper">
+
+
+
+
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav sideStyle">
+                <li class="sidebar-brand ">
+                    <a href="#" class="font-weight-bold" style="color: aliceblue!important">
+                        USER PROFILE
+                    </a>
+                </li>
+                <li>
+                    <img class="img-fluid  mx-auto d-block" src="images/user_profile.png"> 
+                </li>
+                <li>
+                    <img class="img-fluid px-5 mt-3 " src="images/xp_bar.png">
+                </li>
+                <li>
+                    <img class="img-fluid px-5 mt-3 " src="images/rankings.png">
+                </li>
+                <li>
+                    <img class="img-fluid px-5 mt-2 " src="images/achievments.png">
+                </li>
+                <li>
+                    <a href="#">Leaderboards</a>
+                </li>
+                <li>
+                    <a href="#">Achievements</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+
+
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper ">
+            <div class="container-fluid px-0">
+
+                <div class="container-fluid  my-auto position-fixed navStyle">
+                   
+                    <div class="row ">
+                        <div class="col-1">
+
+                            <!-- #sidebar-button -->
+                            <a href="#menu-toggle" class="btn" style="font-size: 3em;" id="menu-toggle">
+                                <i class="fa fa-bars btnStyle"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-3 offset-3 ">
+
+                            <!-- NAVIGATION BAR -->
+                            <ul class="nav  nav-pills " id="pills-tab" role="tablist" style="line-height: 45px" >
+                                <li class="nav-item rounded-0" >
+                                    <a class="nav-link active rounded-0 nav-link-color font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">HOME</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link rounded-0 nav-link-color font-weight-bold" id="pills-profile-tab" data-toggle="pill" href="#pills-events" role="tab" aria-controls="pills-profile" aria-selected="false">EVENTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link rounded-0 nav-link-color font-weight-bold" id="pills-contact-tab" data-toggle="pill" href="#pills-houses" role="tab" aria-controls="pills-contact" aria-selected="false">HOUSES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link rounded-0 nav-link-color font-weight-bold" id="pills-contact-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-contact" aria-selected="false">ABOUT</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                <!-- CONTENT FOR EACH PAGE -->
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- PAGE 1 -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                       
+                        <img class="img-fluid" src="images/home_picture.png"  style="width: 100%">
+                        
+                        
+                        <div class="mx-auto" style="width: 80%">
+
+                            <h1>Qui ita affectus, beatum esse numquam probabis;</h1>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Sit sane ista voluptas.</i> <a href="http://loripsum.net/" target="_blank">Non laboro, inquit, de nomine.</a> Sed vos squalidius, illorum vides quam niteat oratio. Nonne igitur tibi videntur, inquit, mala? </p>
+
+                            <h3>Itaque rursus eadem ratione, qua sum paulo ante usus, haerebitis.</h3>
+
+                            <p>Hunc vos beatum; Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres. <a href="http://loripsum.net/" target="_blank">Qui est in parvis malis.</a> Velut ego nunc moveor. </p>
+
+                            <p>Quae cum dixisset paulumque institisset, Quid est? Sed haec in pueris; <mark>Gloriosa ostentatio in constituendo summo bono.</mark> Frater et T. Ita graviter et severe voluptatem secrevit a bono. <i>Quae diligentissime contra Aristonem dicuntur a Chryippo.</i> Quid ad utilitatem tantae pecuniae? </p>
+
+                            <ol>
+                                <li>Quid ergo aliud intellegetur nisi uti ne quae pars naturae neglegatur?</li>
+                                <li>Quam tu ponis in verbis, ego positam in re putabam.</li>
+                            </ol>
+
+
+                            <ul>
+                                <li>Immo vero, inquit, ad beatissime vivendum parum est, ad beate vero satis.</li>
+                                <li>Inquit, an parum disserui non verbis Stoicos a Peripateticis, sed universa re et tota sententia dissidere?</li>
+                                <li>Quid ergo attinet dicere: Nihil haberem, quod reprehenderem, si finitas cupiditates haberent?</li>
+                                <li>Sed erat aequius Triarium aliquid de dissensione nostra iudicare.</li>
+                                <li>Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers?</li>
+                            </ul>
+
+
+                            <p>Tubulo putas dicere? <b>Quo studio Aristophanem putamus aetatem in litteris duxisse?</b> Erat enim Polemonis. Nam ante Aristippus, et ille melius. Iam in altera philosophiae parte. Qua tu etiam inprudens utebare non numquam. <b>Hic ambiguo ludimur.</b> <i>Quid ait Aristoteles reliquique Platonis alumni?</i> </p>
+
+                            <p><a href="http://loripsum.net/" target="_blank">Quo modo autem philosophus loquitur?</a> Id mihi magnum videtur. At hoc in eo M. Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Estne, quaeso, inquam, sitienti in bibendo voluptas? At multis malis affectus. Nulla erit controversia. Quis est tam dissimile homini. </p>
+
+                            <p>Et quod est munus, quod opus sapientiae? Quid enim possumus hoc agere divinius? <a href="http://loripsum.net/" target="_blank">Immo videri fortasse.</a> <mark>Recte, inquit, intellegis.</mark> </p>
+
+                            <p><a href="http://loripsum.net/" target="_blank">Sint ista Graecorum;</a> Quid autem habent admirationis, cum prope accesseris? At, si voluptas esset bonum, desideraret. Recte, inquit, intellegis. Scrupulum, inquam, abeunti; </p>
+
+                            <blockquote cite="http://loripsum.net">
+                                Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata;
+                            </blockquote>
+
+
+                            <h2>Et nemo nimium beatus est;</h2>
+
+                            <p>Ad eos igitur converte te, quaeso. Cave putes quicquam esse verius. Duo Reges: constructio interrete. Tu quidem reddes; Beatus autem esse in maximarum rerum timore nemo potest. Velut ego nunc moveor. </p>
+
+                            <ol>
+                                <li>Vide, quantum, inquam, fallare, Torquate.</li>
+                                <li>Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus.</li>
+                                <li>Quicquid porro animo cernimus, id omne oritur a sensibus;</li>
+                                <li>Quod quidem iam fit etiam in Academia.</li>
+                                <li>Et harum quidem rerum facilis est et expedita distinctio.</li>
+                            </ol>
+
+
+                            <ul>
+                                <li>Qui autem esse poteris, nisi te amor ipse ceperit?</li>
+                                <li>Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat;</li>
+                            </ul>
+
+
+                            <p>Putabam equidem satis, inquit, me dixisse. Quorum altera prosunt, nocent altera. <a href="http://loripsum.net/" target="_blank">Itaque his sapiens semper vacabit.</a> Gerendus est mos, modo recte sentiat. </p>
+
+                            <p>Gerendus est mos, modo recte sentiat. <a href="http://loripsum.net/" target="_blank">Sed potestne rerum maior esse dissensio?</a> Quae diligentissime contra Aristonem dicuntur a Chryippo. Prodest, inquit, mihi eo esse animo. Igitur ne dolorem quidem. Sed quod proximum fuit non vidit. </p>
+
+                            <blockquote cite="http://loripsum.net">
+                                Sin autem summa voluptas est, ut Epicuro placet, nihil dolere, primum tibi recte, Chrysippe, concessum est nihil desiderare manum, cum ita esset affecta, secundum non
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- PAGE 1 -->
+
+
+
+                    <!-- PAGE 2 -->
+                    <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="pageStyle mx-auto" style="width: 80%">
+
+                            <h1>Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter.</h1>
+
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non potes, nisi retexueris illa. Illis videtur, qui illud non dubitant bonum dicere -; <a href="http://loripsum.net/" target="_blank">Eiuro, inquit adridens, iniquum, hac quidem de re;</a> Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis vitia posuisse contraria. At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. </p>
+
+                            <blockquote cite="http://loripsum.net">
+                                Ergo in iis adolescentibus bonam spem esse dicemus et magnam indolem, quos suis commodis inservituros et quicquid ipsis expediat facturos arbitrabimur?
+                            </blockquote>
+
+
+                            <p>Ut in geometria, prima si dederis, danda sunt omnia. <b>Scrupulum, inquam, abeunti;</b> Tum Lucius: Mihi vero ista valde probata sunt, quod item fratri puto. Ergo hoc quidem apparet, nos ad agendum esse natos. </p>
+
+                            <h2>Apparet statim, quae sint officia, quae actiones.</h2>
+
+                            <p>Bona autem corporis huic sunt, quod posterius posui, similiora. Quis non odit sordidos, vanos, leves, futtiles? Sed residamus, inquit, si placet. Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus; Haec et tu ita posuisti, et verba vestra sunt. His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Atque his de rebus et splendida est eorum et illustris oratio. Quia dolori non voluptas contraria est, sed doloris privatio. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. </p>
+
+                            <ul>
+                                <li>Hic ambiguo ludimur.</li>
+                                <li>Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis.</li>
+                                <li>Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum.</li>
+                                <li>Quaeque de virtutibus dicta sunt, quem ad modum eae semper voluptatibus inhaererent, eadem de amicitia dicenda sunt.</li>
+                                <li>Eodem modo is enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.</li>
+                                <li>Servari enim iustitia nisi a forti viro, nisi a sapiente non potest.</li>
+                            </ul>
+
+
+                            <p><a href="http://loripsum.net/" target="_blank">Quare ad ea primum, si videtur;</a> Quid ergo hoc loco intellegit honestum? A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Quod vestri quidem vel optime disputant, nihil opus esse eum, qui philosophus futurus sit, scire litteras. Sic, et quidem diligentius saepiusque ista loquemur inter nos agemusque communiter. <a href="http://loripsum.net/" target="_blank">Hos contra singulos dici est melius.</a> Sed quid minus probandum quam esse aliquem beatum nec satis beatum? Dulce amarum, leve asperum, prope longe, stare movere, quadratum rotundum. </p>
+
+                            <p>Te ipsum, dignissimum maioribus tuis, voluptasne induxit, ut adolescentulus eriperes P. Tenesne igitur, inquam, Hieronymus Rhodius quid dicat esse summum bonum, quo putet omnia referri oportere? Summae mihi videtur inscitiae. <mark>Atqui reperies, inquit, in hoc quidem pertinacem;</mark> Ergo, inquit, tibi Q. Tu vero, inquam, ducas licet, si sequetur; Roges enim Aristonem, bonane ei videantur haec: vacuitas doloris, divitiae, valitudo; Nihil acciderat ei, quod nollet, nisi quod anulum, quo delectabatur, in mari abiecerat. Nihil minus, contraque illa hereditate dives ob eamque rem laetus. <a href="http://loripsum.net/" target="_blank">Sed ille, ut dixi, vitiose.</a> Pauca mutat vel plura sane; </p>
+
+                            <p>Te ipsum, dignissimum maioribus tuis, voluptasne induxit, ut adolescentulus eriperes P. Tenesne igitur, inquam, Hieronymus Rhodius quid dicat esse summum bonum, quo putet omnia referri oportere? Summae mihi videtur inscitiae. <mark>Atqui reperies, inquit, in hoc quidem pertinacem;</mark> Ergo, inquit, tibi Q. Tu vero, inquam, ducas licet, si sequetur; Roges enim Aristonem, bonane ei videantur haec: vacuitas doloris, divitiae, valitudo; Nihil acciderat ei, quod nollet, nisi quod anulum, quo delectabatur, in mari abiecerat. Nihil minus, contraque illa hereditate dives ob eamque rem laetus. <a href="http://loripsum.net/" target="_blank">Sed ille, ut dixi, vitiose.</a> Pauca mutat vel plura sane; </p>
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- PAGE 2 -->
+
+                    <!-- PAGE 3 -->
+                    <div class="tab-pane fade" id="pills-houses" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="container">
+
+
+
+                            <!-- ADD CONTENT -->
+
+
+                        </div>
+                    </div>
+                    <!-- PAGE 3 -->
+
+                    <!-- PAGE 4 -->
+                    <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="container">
+
+
+
+                            <!-- ADD CONTENT -->
+
+
+
+                        </div>
+                    </div>
+                    <!-- PAGE 4 -->
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="container">
+                
+              Footer content.
+            </div>
+        </div>
+
+        <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
 
 </body>
+
 </html>
