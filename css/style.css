@@ -1,4 +1,10 @@
+#lvlNum {
+	font-size: 15px;
+}
 
+#myBar{
+    overflow: hidden;
+}
 
 .footer {
     

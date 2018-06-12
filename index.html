@@ -41,12 +41,14 @@
                     </a>
                 </li>
                 <li>
-                    <img class="img-fluid  mx-auto d-block" src="images/user_profile.png"> 
+                    <img class="img-fluid  mx-auto d-block" src="images/user_profile.png">
                 </li>
                 <li>
-                    <a id="lvlNum" href="#">1</a>
+                    <a id="lvlNum" href="#">LEVEL 1</a>
                     <div id="myProgress">
-                        <div id="myBar"></div>
+                        <div id="myBar">
+                            <p id="myBarText"> </p>
+                        </div>
                     </div>
                     <img class="img-fluid px-5 mt-3 " src="images/xp_bar.png">
                 </li>
@@ -75,7 +77,7 @@
             <div class="container-fluid px-0">
 
                 <div class="container-fluid  my-auto position-fixed navStyle">
-                   
+
                     <div class="row ">
                         <div class="col-1">
 
@@ -88,8 +90,8 @@
                         <div class="col-3 offset-3 ">
 
                             <!-- NAVIGATION BAR -->
-                            <ul class="nav  nav-pills " id="pills-tab" role="tablist" style="line-height: 45px" >
-                                <li class="nav-item rounded-0" >
+                            <ul class="nav  nav-pills " id="pills-tab" role="tablist" style="line-height: 45px">
+                                <li class="nav-item rounded-0">
                                     <a class="nav-link active rounded-0 nav-link-color font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">HOME</a>
                                 </li>
                                 <li class="nav-item ">
@@ -108,16 +110,16 @@
                     </div>
                 </div>
 
-                
+
                 <!-- CONTENT FOR EACH PAGE -->
                 <div class="tab-content" id="pills-tabContent">
 
                     <!-- PAGE 1 -->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                       
-                        <img class="img-fluid" src="images/home_picture.png"  style="width: 100%">
-                        
-                        
+
+                        <img class="img-fluid" src="images/home_picture.png" style="width: 100%">
+
+
                         <div class="mx-auto" style="width: 80%">
 
                             <h1>Qui ita affectus, beatum esse numquam probabis;</h1>
@@ -278,8 +280,7 @@
         <!-- FOOTER -->
         <div class="footer">
             <div class="container">
-              <button id='achieve1' onclick="move200()">Click Me</button>   
-              Footer content.
+                <button id='achieve1' onclick="move200()">Click Me</button> Footer content.
             </div>
         </div>
 
@@ -288,34 +289,46 @@
                 e.preventDefault();
                 $("#wrapper").toggleClass("toggled");
             });
-            
+
             var xpValTotal = 0;
             var width = 1;
-            
+            var levelNum = 1;
+
             function move200() {
-                var elem = document.getElementById("myBar");   
+                console.log(width);
+                var elem = document.getElementById("myBar");
+                var elemText = document.getElementById("myBarText");
                 var level = document.getElementById("lvlNum");
                 var xpVal = 200;
-                var lvlThreshold = level.innerHTML*1000;
+                var lvlThreshold = levelNum * 1000;
                 xpValTotal += xpVal;
-                elem.innerHTML = xpValTotal;
-                if (width >= 100) {
-                    width = 1;
-                    level.innerHTML++;
-                    xpValTotal = 0;
-                }
+                elemText.innerHTML = xpValTotal + " XP";
+
+
+
                 var id = setInterval(frame, 10);
+
                 function frame() {
-                    if (width >= ((xpValTotal/lvlThreshold)*100)) {
+                    if (width >= ((xpValTotal / lvlThreshold) * 100)) {
                         clearInterval(id);
-                    } 
-                    else {
-                        width++; 
+                        console.log(width + "frame if");
+                    } else {
+                        width++;
                         elem.style.width = width + '%';
+                        console.log(width + "else");
+
+                        if (width >= 100) {
+                            console.log(width + "antras");
+                            width = 1;
+                            levelNum++;
+                            level.innerHTML = "LEVEL  " + levelNum;
+                            xpValTotal = 0;
+                        }
                     }
-                        
+
                 }
                 //document.getElementById("achieve1").style.display = "none";
+                console.log(width + "galas");
             }
         </script>
 
