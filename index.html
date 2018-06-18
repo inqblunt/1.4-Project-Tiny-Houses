@@ -55,16 +55,16 @@
                     <img class="img-fluid px-5 mt-3 " src="images/xp_bar.png">
                 </li>
                 <li>
-                    #<p id="rankNum">11</p><img class="img-fluid px-5 mt-3 " src="images/rankings.png">
+                    <p id="rankNum">#11</p><img class="img-fluid px-5 mt-3 " src="images/rankings.png">
                 </li>
                 <li>
-                    <p id="achNum">0</p>/15<img class="img-fluid px-5 mt-2 " src="images/achievments.png">
-                </li>
-                <li>
-                    <a href="#">Leaderboards</a>
+                    <p id="achNum">0/15</p><img class="img-fluid px-5 mt-2 " src="images/achievments.png">
                 </li>
                 <li>
                     <a href="#">Achievements</a>
+                </li>
+                <li>
+                    <a href="#" id="achieve5" onclick="move200(this.id)">Leaderboards</a>
                 </li>
             </ul>
         </div>
@@ -85,7 +85,7 @@
 
                             <!-- #sidebar-button -->
                             <a href="#menu-toggle" class="btn" style="font-size: 3em;" id="menu-toggle">
-                                <i class="fa fa-bars btnStyle"></i>
+                                <i class="fa fa-bars btnStyle" onclick="move200(this.id)" id="achieve2"></i>
                             </a>
                         </div>
 
@@ -103,7 +103,7 @@
                                     <a class="nav-link rounded-0 nav-link-color font-weight-bold" id="pills-contact-tab" data-toggle="pill" href="#pills-houses" role="tab" aria-controls="pills-contact" aria-selected="false">HOUSES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link rounded-0 nav-link-color font-weight-bold" id="pills-contact-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-contact" aria-selected="false">ABOUT</a>
+                                    <a class="nav-link rounded-0 nav-link-color font-weight-bold" id="pills-contact-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-contact" aria-selected="false" onclick="move200(this.id)">ABOUT</a>
                                 </li>
                             </ul>
 
@@ -197,7 +197,7 @@
                                         <p style="margin-top: 90%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias, in voluptas iure repellat molestias, quia tempore ut! Odit, illo.</p>
                                     </div>
                                     <div class="row">
-                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;">PARTICIPATE</button>
+                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;" id="achieve4" onclick="move200(this.id)">PARTICIPATE</button>
                                     </div>
 
 
@@ -228,7 +228,7 @@
                                         <p style="margin-top: 90%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias, in voluptas iure repellat molestias, quia tempore ut! Odit, illo.</p>
                                     </div>
                                     <div class="row">
-                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;">PARTICIPATE</button>
+                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;" id="achieve4" onclick="move200(this.id)">PARTICIPATE</button>
                                     </div>
 
 
@@ -258,7 +258,7 @@
                                         <p style="margin-top: 90%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias, in voluptas iure repellat molestias, quia tempore ut! Odit, illo.</p>
                                     </div>
                                     <div class="row">
-                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;">PARTICIPATE</button>
+                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;" id="achieve4" onclick="move200(this.id)">PARTICIPATE</button>
                                     </div>
 
 
@@ -292,25 +292,25 @@
                             <h1 class="pb-3" style="border-bottom: 1px solid;"> HOUSES & PRICES</h1>
                             <div class="row ">
                                 <div class="col text-center">
-                                    <img id="img1" onclick="changeContent(this)" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img1" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img2" onclick="changeContent(this)" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img2" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img3" onclick="changeContent(this)" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img3" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                             </div>
 
                             <div class="row mt-5">
                                 <div class="col text-center">
-                                    <img id="img4" onclick="changeContent(this)" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img4" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img5" onclick="changeContent(this)" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img5" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img6" onclick="changeContent(this)" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img6" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                             </div>
 
@@ -405,12 +405,7 @@
 
         <!-- FOOTER -->
         <div class="footer">
-            <div class="container">
-                <button id='achieve1' onclick="move200(this.id)"></button> 
-                <button id='achieve2' onclick="move200(this.id)"></button>
-                <button id='achieve3' onclick="move200(this.id)"></button>
-                <button id='achieve4' onclick="move200(this.id)"></button>
-                <button id='achieve5' onclick="move200(this.id)"></button> Footer content.
+            <div class="container">Footer content.
             </div>
         </div>
 
@@ -454,7 +449,7 @@
                 var level = document.getElementById("lvlNum");
                 var rank = document.getElementById("rankNum");
                 var chevMent = document.getElementById("achNum");
-                if (onclick_id === 'achieve1' && allowCheevo1 == true) {
+                if (onclick_id === 'pills-contact-tab' && allowCheevo1 == true) {
                     xpVal = 200;
                     alert("Achievement Unlocked: Welcome!");
                     cheevos++;
@@ -466,7 +461,7 @@
                     cheevos++;
                     allowCheevo2 = false;
                 }
-                else if (onclick_id === 'achieve3' && allowCheevo3 == true) {
+                else if (onclick_id === 'img1' || onclick_id === 'img2' || onclick_id === 'img3' || onclick_id === 'img4' || onclick_id === 'img5' || onclick_id === 'img6' && allowCheevo3 == true) {
                     xpVal = 600;
                     alert("Achievement Unlocked: Home on the Range");
                     cheevos++;
@@ -499,22 +494,22 @@
                 xpValTotal += xpVal;
                 elemText.innerHTML = xpValTotal + " XP";
                 
-                chevMent.innerHTML = cheevos;
+                chevMent.innerHTML = cheevos + " /15";
                 //console.log(cheevos);
                 if (cheevos == 1) {
-                    rank.innerHTML = '11';
+                    rank.innerHTML = '#11';
                 }
                 else if (cheevos == 2) {
-                    rank.innerHTML = '9';
+                    rank.innerHTML = '#9';
                 }
                 else if (cheevos == 3) {
-                    rank.innerHTML = '5';
+                    rank.innerHTML = '#5';
                 }
                 else if (cheevos == 4) {
-                    rank.innerHTML = '2';
+                    rank.innerHTML = '#2';
                 }
                 else if (cheevos >= 5) {
-                    rank.innerHTML = '1';
+                    rank.innerHTML = '#1';
                 }
 
                 var id = setInterval(frame, 10);
@@ -550,7 +545,7 @@
                     }
 
                 }
-                //document.getElementById("achieve1").style.display = "none";
+                /*if (onclick_id == achieve1 ||) {document.getElementById(onclick_id).style.display = "none";}*/
                 console.log(width + "galas");
             }
 
