@@ -292,22 +292,22 @@
                                     <img id="img1" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img2" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img2" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img3" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img3" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                             </div>
 
                             <div class="row mt-5">
                                 <div class="col text-center">
-                                    <img id="img4" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img4" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img5" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img5" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img6" onclick="changeContent(this) move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
+                                    <img id="img6" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/thumbnail.png">
                                 </div>
                             </div>
 
@@ -458,7 +458,7 @@
                     cheevos++;
                     allowCheevo2 = false;
                 }
-                else if (onclick_id === 'img1' || onclick_id === 'img2' || onclick_id === 'img3' || onclick_id === 'img4' || onclick_id === 'img5' || onclick_id === 'img6' && allowCheevo3 == true) {
+                else if (onclick_id === 'img1' && allowCheevo3 == true || onclick_id === 'img2' && allowCheevo3 == true || onclick_id === 'img3' && allowCheevo3 == true || onclick_id === 'img4' && allowCheevo3 == true || onclick_id === 'img5' && allowCheevo3 == true || onclick_id === 'img6' && allowCheevo3 == true) {
                     xpVal = 600;
                     alert("Achievement Unlocked: Home on the Range");
                     cheevos++;
