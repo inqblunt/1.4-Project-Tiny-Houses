@@ -1,4 +1,48 @@
+.personImg:hover {
+    cursor: pointer;
+}
 
+.roleText {
+	font-weight: bold;
+}
+
+
+.picturesH:hover {
+	cursor: pointer;
+}
+
+.eventRow {
+	border-bottom: 1px solid; 
+}
+.imageContainer {
+	position: relative;
+    margin-left: 20%;
+
+    
+}
+.dateImg {
+	position: absolute;
+}
+.dateText {
+	position: absolute;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+.landingText {
+	margin-top: 5%;
+    margin-bottom: 5%;
+}
+#lvlNum {
+	font-size: 15px;
+}
+
+#myBar{
+    overflow: hidden;
+}
 
 .footer {
     
@@ -44,7 +88,8 @@
 }
 .navStyle {
 	background-color: black;
-    
+    z-index:1;
+
     text-align: left;
 }
 .nav-pills > li > a.active {
@@ -177,4 +222,18 @@ body {
     position: relative;
     margin-right: 0;
   }
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white; 
 }
