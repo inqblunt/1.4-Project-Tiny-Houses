@@ -52,16 +52,13 @@
                             <p id="myBarText"> </p>
                         </div>
                     </div>
-                    <img class="img-fluid px-5 mt-3 " src="images/xp_bar.png">
+                    <!--<img class="img-fluid px-5 mt-3 " src="images/xp_bar.png"> -->
                 </li>
                 <li>
-                    <p id="rankNum">#11</p><img class="img-fluid px-5 mt-3 " src="images/rankings.png">
+                    <img class="img-fluid px-5 mt-3 " src="images/rankings.png"><p id="rankNum">#11</p>
                 </li>
                 <li>
-                    <p id="achNum">0/15</p><img class="img-fluid px-5 mt-2 " src="images/achievments.png">
-                </li>
-                <li>
-                    <a href="#">Achievements</a>
+                    <img class="img-fluid px-5 mt-2 " src="images/achievments.png"><p id="achNum">0/15</p>Achievements
                 </li>
                 <li>
                     <a href="#" id="achieve5" onclick="move200(this.id)">Leaderboards</a>
@@ -528,13 +525,13 @@
                             width = 1;
                             levelNum++;
                             if (levelNum >= 2 && allowLevelCheevo) {
-                                alert("Achievement Unlocked: Pentennial Man");
+                                alert("Achievement Unlocked: Movin' On Up");
                                 cheevos++;
                                 allowLevelCheevo = false;
                                 move200('achieve3');
                             }
-                            else if (cheevos >= 4 && allowLevelCheevo2) {
-                                alert("Achievement Unlocked: Decimator");
+                            else if (levelNum >= 4 && allowLevelCheevo2) {
+                                alert("Achievement Unlocked: Lord");
                                 cheevos++;
                                 allowLevelCheevo2 = false;
                                 move200('achieve5');
