@@ -53,10 +53,10 @@
                     <img class="img-fluid px-5 mt-3 " src="images/xp_bar.png">
                 </li>
                 <li>
-                    <img class="img-fluid px-5 mt-3 " src="images/rankings.png">
+                    #<p id="rankNum">11</p><img class="img-fluid px-5 mt-3 " src="images/rankings.png">
                 </li>
                 <li>
-                    <img class="img-fluid px-5 mt-2 " src="images/achievments.png">
+                    <p id="achNum">0</p>/15<img class="img-fluid px-5 mt-2 " src="images/achievments.png">
                 </li>
                 <li>
                     <a href="#">Leaderboards</a>
@@ -280,7 +280,11 @@
         <!-- FOOTER -->
         <div class="footer">
             <div class="container">
-                <button id='achieve1' onclick="move200()">Click Me</button> Footer content.
+                <button id='achieve1' onclick="move200(this.id)"></button> 
+                <button id='achieve2' onclick="move200(this.id)"></button>
+                <button id='achieve3' onclick="move200(this.id)"></button>
+                <button id='achieve4' onclick="move200(this.id)"></button>
+                <button id='achieve5' onclick="move200(this.id)"></button> Footer content.
             </div>
         </div>
 
@@ -293,19 +297,99 @@
             var xpValTotal = 0;
             var width = 1;
             var levelNum = 1;
-
-            function move200() {
+            var cheevos = 0;
+            var allowLeaderboardCheevo = true;
+            var allowLeaderboardCheevo2 = true;
+            var allowLevelCheevo = true;
+            var allowLevelCheevo2 = true;
+            var allowCheevo1 = true;
+            var allowCheevo2 = true;
+            var allowCheevo3 = true;
+            var allowCheevo4 = true;
+            var allowCheevo5 = true;
+            
+            function move200(onclick_id) {
+                if (cheevos > 1 && allowLeaderboardCheevo) {
+                                alert("Achievement Unlocked: Cool Kids Club");
+                                cheevos++;
+                                allowLeaderboardCheevo = false;
+                                move200('achieve3');
+                            }
+                            else if (cheevos >= 5 && allowLeaderboardCheevo2) {
+                                alert("Achievement Unlocked: Coolest Kid");
+                                cheevos++;
+                                allowLeaderboardCheevo2 = false;
+                                move200('achieve5');
+                            }
                 console.log(width);
+                var xpVal;
                 var elem = document.getElementById("myBar");
                 var elemText = document.getElementById("myBarText");
                 var level = document.getElementById("lvlNum");
-                var xpVal = 200;
+                var rank = document.getElementById("rankNum");
+                var chevMent = document.getElementById("achNum");
+                if (onclick_id === 'achieve1' && allowCheevo1 == true) {
+                    xpVal = 200;
+                    alert("Achievement Unlocked: Welcome!");
+                    cheevos++;
+                    allowCheevo1 = false;
+                }
+                else if (onclick_id === 'achieve2' && allowCheevo2 == true) {
+                    xpVal = 400;
+                    alert("Achievement Unlocked: Mirror Mirror");
+                    cheevos++;
+                    allowCheevo2 = false;
+                }
+                else if (onclick_id === 'achieve3' && allowCheevo3 == true) {
+                    xpVal = 600;
+                    alert("Achievement Unlocked: Home on the Range");
+                    cheevos++;
+                    allowCheevo3 = false;
+                }
+                else if (onclick_id === 'achieve3' && allowCheevo3 == false) {
+                    xpVal = 600;
+                    cheevos++;
+                }
+                else if (onclick_id === 'achieve4' && allowCheevo4 == true) {
+                    xpVal = 800;
+                    alert("Achievement Unlocked: Life of the Party");
+                    cheevos++;
+                    allowCheevo4 = false;
+                }
+                else if (onclick_id === 'achieve5' && allowCheevo5 == true) {
+                    xpVal = 1000;
+                    alert("Achievement Unlocked: Under-Development");
+                    cheevos++;
+                    allowCheevo5 = false;
+                }
+                else if (onclick_id === 'achieve5' && allowCheevo5 == false) {
+                    xpVal = 1000;
+                    cheevos++;
+                }
+                else {
+                    xpVal = 0;
+                }
                 var lvlThreshold = levelNum * 1000;
                 xpValTotal += xpVal;
                 elemText.innerHTML = xpValTotal + " XP";
-
-
-
+                
+                chevMent.innerHTML = cheevos;
+                //console.log(cheevos);
+                if (cheevos == 1) {
+                    rank.innerHTML = '11';
+                }
+                else if (cheevos == 2) {
+                    rank.innerHTML = '9';
+                }
+                else if (cheevos == 3) {
+                    rank.innerHTML = '5';
+                }
+                else if (cheevos == 4) {
+                    rank.innerHTML = '2';
+                }
+                else if (cheevos >= 5) {
+                    rank.innerHTML = '1';
+                }
                 var id = setInterval(frame, 10);
 
                 function frame() {
@@ -321,13 +405,26 @@
                             console.log(width + "antras");
                             width = 1;
                             levelNum++;
+                            if (levelNum >= 2 && allowLevelCheevo) {
+                                alert("Achievement Unlocked: Pentennial Man");
+                                cheevos++;
+                                allowLevelCheevo = false;
+                                move200('achieve3');
+                            }
+                            else if (cheevos >= 4 && allowLevelCheevo2) {
+                                alert("Achievement Unlocked: Decimator");
+                                cheevos++;
+                                allowLevelCheevo2 = false;
+                                move200('achieve5');
+                            }
                             level.innerHTML = "LEVEL  " + levelNum;
                             xpValTotal = 0;
                         }
                     }
 
                 }
-                //document.getElementById("achieve1").style.display = "none";
+                //document.getElementById(onclick_id).style.display = "none";
+                
                 console.log(width + "galas");
             }
         </script>
