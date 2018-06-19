@@ -11,19 +11,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <style>
 
-
-    </style>
+    <link href="mint.css" rel="stylesheet">
+    <link href="noty.css" rel="stylesheet">
+    <script src="noty.js" type="text/javascript"></script>
 </head>
 
 <body id="body">
-
-
-
-
-
-
 
 
 
@@ -140,7 +134,7 @@
                     <!-- PAGE 1 -->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-                        <img class="img-responsive" src="images/home_picture.png" style="width: 100%">
+                        <img class="img-responsive" src="images/main_page_bg.png" style="width: 100%">
 
 
                         <div class="mx-auto text-center landingText" style="width: 60%">
@@ -177,7 +171,7 @@
                             <div class="col text-center">
                                 <img class="mt-5 mb-3 mx-auto d-block img-responsive pictures" src="images/show1.png">
                                 <h1> Showcase </h1>
-                                <p class="mx-auto" style="width: 80%"> If you only want to showcase your work, then this event is perfect for you! we have a showcase event this upcoming sunday, where you can showcase aoo your work.  </p>
+                                <p class="mx-auto" style="width: 80%"> If you only want to showcase your work, then this event is perfect for you! we have a showcase event this upcoming sunday, where you can showcase aoo your work. </p>
                             </div>
                             <div class="col text-center">
                                 <img class="mt-5 mb-3 mx-auto d-block img-responsive pictures" src="images/hand.png">
@@ -214,11 +208,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <p style="margin-top: 90%">Groninger Forum</p>
+                                    <div class="row ">
+                                        <p class="mx-auto" style="margin-top: 100%;">Groninger Forum</p>
                                     </div>
                                     <div class="row">
-                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;" id="achieve4" onclick="move200(this.id)">PARTICIPATE</button>
+                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 150%;" id="achieve4" onclick="move200(this.id); addIcon(this)">PARTICIPATE</button>
                                     </div>
 
 
@@ -246,10 +240,10 @@
                                     </div>
 
                                     <div class="row">
-                                        <p style="margin-top: 90%">Groninger Forum</p>
+                                        <p class="mx-auto" style="margin-top: 90%">Groninger Forum</p>
                                     </div>
                                     <div class="row">
-                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;" id="achieve4" onclick="move200(this.id)">PARTICIPATE</button>
+                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 150%;" id="achieve4" onclick="move200(this.id); addIcon(this)">PARTICIPATE</button>
                                     </div>
 
 
@@ -276,10 +270,10 @@
                                     </div>
 
                                     <div class="row">
-                                        <p style="margin-top: 90%">Groninger Forum</p>
+                                        <p class="mx-auto" style="margin-top: 90%">Groninger Forum</p>
                                     </div>
                                     <div class="row">
-                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 70%;" id="achieve4" onclick="move200(this.id)">PARTICIPATE</button>
+                                        <button type="button" class="rounded-0 btn btn-success" style="height: 5%; width: 100%; margin-top: 140%;" id="achieve4" onclick="move200(this.id); addIcon(this)">PARTICIPATE</button>
                                     </div>
 
 
@@ -313,31 +307,31 @@
                             <h1 class="pb-3" style="border-bottom: 1px solid;"> HOUSES & PRICES</h1>
                             <div class="row ">
                                 <div class="col text-center">
-                                    <img id="img1" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h1.jpg">
+                                    <img id="img1" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h1.png">
                                 </div>
                                 <div class="col text-center">
                                     <img id="img2" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h2.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img3" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h3.jpg">
+                                    <img id="img3" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h3.png">
                                 </div>
                             </div>
 
                             <div class="row mt-5">
                                 <div class="col text-center">
-                                    <img id="img4" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h4.jpg">
+                                    <img id="img4" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h4.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img5" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h7.jpg">
+                                    <img id="img5" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h5.png">
                                 </div>
                                 <div class="col text-center">
-                                    <img id="img6" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h6.jpg">
+                                    <img id="img6" onclick="changeContent(this); move200(this.id);" class="mt-5 mb-3 mx-auto d-block img-responsive picturesH" src="images/h6.png">
                                 </div>
                             </div>
 
                             <div class="row mt-5" style="border-top: 1px solid">
                                 <div class="col text-center">
-                                    <img id="mainImg" class="mt-5 mb-3 mx-auto d-block img-responsive pictures" src="images/h5.jpg">
+                                    <img id="mainImg" class="mt-5 mb-3 mx-auto d-block img-responsive pictures" src="images/h1Full.jpg">
                                 </div>
                                 <div class="col text-center d-flex align-items-center">
                                     <p id="houseText" class="mt-5 mb-3 mx-auto d-block " style="width: 60%">The term ‘Tiny House’ is most commonly used to describe a compact dwelling that is transportable and therefore inherently flexible in the nature of how it can perform in a variety of housing situations. While people are interested in tiny houses for various reasons, most are drawn to the flexibility and freedom they offer. For some, it’s the freedom to live a well-balanced life by purchasing something small within their means rather than relying on a mortgage. For others, it’s the flexibility of being able to change the size, function and location of a home as the need arises.</p>
@@ -362,7 +356,7 @@
                                 <div class="col" style="margin-top: 5%;">
                                     <h1 class="mb-5">ABOUT US</h1>
 
-                                    <p class="py-3" style="border-bottom: 1px solid;border-top: 1px solid">We are a small group of individuals from all around the world, and we're trying to give the world more space, one Tiny House at a time. We are 2 designers an artist and 2 developers. We are a multi-cultural development team that seeks to work together, drawing our different views into our projects, and infusing them into our approaches.  </p>
+                                    <p class="py-3" style="border-bottom: 1px solid;border-top: 1px solid">We are a small group of individuals from all around the world, and we're trying to give the world more space, one Tiny House at a time. We are 2 designers an artist and 2 developers. We are a multi-cultural development team that seeks to work together, drawing our different views into our projects, and infusing them into our approaches. </p>
                                 </div>
                             </div>
 
@@ -474,15 +468,27 @@
             function move200(onclick_id) {
 
                 if (cheevos > 1 && allowLeaderboardCheevo) {
-                    alert("Achievement Unlocked: Cool Kids Club");
+                    new Noty({
+                        type: 'success',
+                        theme: 'mint',
+                        layout: 'centerRight',
+                        text: 'Achievement Unlocked: Cool Kids Club'
+                    }).show();
+
                     cheevos++;
                     allowLeaderboardCheevo = false;
                     move200('achieve3');
                 } else if (cheevos >= 5 && allowLeaderboardCheevo2) {
-                    alert("Achievement Unlocked: Coolest Kid");
+
+                    new Noty({
+                        type: 'success',
+                        theme: 'mint',
+                        layout: 'centerRight',
+                        text: 'Achievement Unlocked: Coolest Kid'
+                    }).show();
                     cheevos++;
                     allowLeaderboardCheevo2 = false;
-                    move200('achieve5');
+                    
                 }
                 console.log(width);
                 var xpVal;
@@ -493,17 +499,37 @@
                 var chevMent = document.getElementById("achNum");
                 if (onclick_id == 'pills-contact-tab' && allowCheevo1 == true) {
                     xpVal = 200;
-                    alert("Achievement Unlocked: Welcome!");
+
+                    new Noty({
+                        type: 'success',
+                        theme: 'mint',
+                        layout: 'centerRight',
+                        text: 'Achievement Unlocked: Welcome!'
+                    }).show();
+
                     cheevos++;
                     allowCheevo1 = false;
                 } else if (onclick_id == 'achieve2' && allowCheevo2 == true) {
                     xpVal = 400;
-                    alert("Achievement Unlocked: Mirror Mirror");
+                    new Noty({
+                        type: 'success',
+                        theme: 'mint',
+                        layout: 'centerRight',
+                        text: 'Achievement Unlocked: Mirror Mirror'
+                    }).show();
+
+
                     cheevos++;
                     allowCheevo2 = false;
                 } else if (onclick_id === 'img1' && allowCheevo3 == true || onclick_id === 'img2' && allowCheevo3 == true || onclick_id === 'img3' && allowCheevo3 == true || onclick_id == 'img4' && allowCheevo3 == true || onclick_id === 'img5' && allowCheevo3 == true || onclick_id === 'img6' && allowCheevo3 == true) {
                     xpVal = 600;
-                    alert("Achievement Unlocked: Home on the Range");
+                    new Noty({
+                        type: 'success',
+                        theme: 'mint',
+                        layout: 'centerRight',
+                        text: 'Achievement Unlocked: Home on the Range'
+                    }).show();
+
                     cheevos++;
                     allowCheevo3 = false;
                 } else if (onclick_id == 'achieve3' && allowCheevo3 == false) {
@@ -511,12 +537,24 @@
                     cheevos++;
                 } else if (onclick_id == 'achieve4' && allowCheevo4 == true) {
                     xpVal = 800;
-                    alert("Achievement Unlocked: Life of the Party");
+                    new Noty({
+                        type: 'success',
+                        theme: 'mint',
+                        layout: 'centerRight',
+                        text: 'Achievement Unlocked: Life of the Party'
+                    }).show();
+
                     cheevos++;
                     allowCheevo4 = false;
                 } else if (onclick_id == 'achieve5' && allowCheevo5 == true) {
                     xpVal = 1000;
-                    alert("Achievement Unlocked: Under-Development");
+                    new Noty({
+                        type: 'success',
+                        theme: 'mint',
+                        layout: 'centerRight',
+                        text: 'Achievement Unlocked: Under-Development'
+                    }).show();
+
                     cheevos++;
                     allowCheevo5 = false;
                 } else if (onclick_id == 'achieve5' && allowCheevo5 == false) {
@@ -560,12 +598,24 @@
                             width = 1;
                             levelNum++;
                             if (levelNum >= 2 && allowLevelCheevo) {
-                                alert("Achievement Unlocked: Movin' On Up");
+                                new Noty({
+                                    type: 'success',
+                                    theme: 'mint',
+                                    layout: 'centerRight',
+                                    text: "Achievement Unlocked: Movin' On Up"
+                                }).show();
+
                                 cheevos++;
                                 allowLevelCheevo = false;
                                 move200('achieve3');
                             } else if (levelNum >= 4 && allowLevelCheevo2) {
-                                alert("Achievement Unlocked: Lord");
+                                new Noty({
+                                    type: 'success',
+                                    theme: 'mint',
+                                    layout: 'centerRight',
+                                    text: "Achievement Unlocked: Lord"
+                                }).show();
+
                                 cheevos++;
                                 allowLevelCheevo2 = false;
                                 move200('achieve5');
@@ -612,24 +662,26 @@
 
             function changeContent(id) {
 
+
+
                 if (id.id == "img1") {
-                    $("#mainImg").attr('src', 'images/houseImg1.png');
+                    $("#mainImg").attr('src', 'images/h1Full.jpg');
                     $("#houseText").text(text1);
 
                 } else if (id.id == "img2") {
-                    $("#mainImg").attr('src', 'images/houseImg2.png');
+                    $("#mainImg").attr('src', 'images/h2Full.png');
                     $("#houseText").text(text2);
                 } else if (id.id == "img3") {
-                    $("#mainImg").attr('src', 'images/houseImg3.png');
+                    $("#mainImg").attr('src', 'images/h3Full.jpg');
                     $("#houseText").text(text3);
                 } else if (id.id == "img4") {
-                    $("#mainImg").attr('src', 'images/houseImg3.png');
+                    $("#mainImg").attr('src', 'images/h4Full.jpg');
                     $("#houseText").text(text4);
                 } else if (id.id == "img5") {
-                    $("#mainImg").attr('src', 'images/houseImg5.png');
+                    $("#mainImg").attr('src', 'images/h5Full.png');
                     $("#houseText").text(text5);
                 } else if (id.id == "img6") {
-                    $("#mainImg").attr('src', 'images/houseImg6.png');
+                    $("#mainImg").attr('src', 'images/h6Full.jpg');
                     $("#houseText").text(text6);
                 }
             }
@@ -659,6 +711,22 @@
                 }
             }
 
+        </script>
+        
+        <script>
+            let participate = false;
+            function addIcon(buttonPassed) {
+                
+                if (!participate)
+                {          
+                    buttonPassed.innerHTML = '<img src="images/user-check.svg" style="width: 20px; heigth:20px; color: white; margin-right: 10px;" />' + "PARTICIPATE";
+                    participate = true;
+                } else {
+                    buttonPassed.innerHTML = "PARTICIPATE";
+                    participate = false;
+                }
+            }
+            
         </script>
 
 </body>
