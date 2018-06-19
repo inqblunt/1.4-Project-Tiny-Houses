@@ -46,7 +46,7 @@
                     <img class="img-fluid  mx-auto d-block" src="images/user_profile.png">
                 </li>
                 <li>
-                    <a id="lvlNum" href="#">LEVEL 1</a>
+                    <a class="font-weight-bold" id="lvlNum" style="color: whitesmoke" href="#">LEVEL 1</a>
                     <div id="myProgress">
                         <div id="myBar">
                             <p id="myBarText"> </p>
@@ -54,16 +54,40 @@
                     </div>
                     <!--<img class="img-fluid px-5 mt-3 " src="images/xp_bar.png"> -->
                 </li>
+
+
+
                 <li>
-                    <img class="img-fluid px-5 mt-3 " src="images/rankings.png"><p id="rankNum">#11</p>
+                    <a href="#" class="mt-5" id="achieve5" style="margin-top: 100px; color: whitesmoke; font-size: 30px" onclick="move200(this.id)">LEADERBOARDS</a>
                 </li>
                 <li>
-                    <img class="img-fluid px-5 mt-2 " src="images/achievments.png"><p id="achNum">0/15</p>Achievements
-                </li>
-                <li>
-                    <a href="#" id="achieve5" onclick="move200(this.id)">Leaderboards</a>
+                    <div class="row" style="margin-top: 15px;">
+
+
+                        <div class="col">
+                            <img class="mt-2" style="margin-left: 50px;" src="images/achievments.png">
+                        </div>
+                        <div class="col">
+                            <p id="achNum">0 / 15</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img class="mt-2" style="margin-left: 50px;" src="images/rankings.png">
+                        </div>
+
+                        <div class="col">
+                            <p id="rankNum">#11</p>
+                        </div>
+                    </div>
                 </li>
             </ul>
+
+
+
+
+
+
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -331,7 +355,7 @@
                     <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="pageStyle mx-auto text-center" style="width: 60%">
 
-                            <div class="row mt-5">
+                            <div class="row mt-5 ">
                                 <div class="col">
                                     <img class="img-responsive" src="images/aboutMainPhoto.png">
                                 </div>
@@ -402,7 +426,28 @@
 
         <!-- FOOTER -->
         <div class="footer">
-            <div class="container">Footer content.
+            <div class="mx-auto text-center" style="width: 60%">
+                <div class="row">
+                    <div class="col contactsFooter my-5" style="line-height: 30px">
+
+                        <strong>CONTACTS: </strong>
+                        <br> 1450 Valley Street <br> Colorado Springs, CO 80915 <br> Mon - Fri 9 am – 5 pm MST<br> Sat 10 am – 2 pm MST<br>
+                        <strong>Phone:</strong> (877) 331-8469
+                    </div>
+                    <div class="mt-5 contactsFooter">
+                        <div class="footer-social-icons">
+                            <h4 class="_14">Follow us on:</h4>
+                            <ul class="social-icons">
+                                <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                                <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                                <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                                <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                                <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -425,20 +470,20 @@
             var allowCheevo3 = true;
             var allowCheevo4 = true;
             var allowCheevo5 = true;
-            
+
             function move200(onclick_id) {
+
                 if (cheevos > 1 && allowLeaderboardCheevo) {
-                                alert("Achievement Unlocked: Cool Kids Club");
-                                cheevos++;
-                                allowLeaderboardCheevo = false;
-                                move200('achieve3');
-                            }
-                            else if (cheevos >= 5 && allowLeaderboardCheevo2) {
-                                alert("Achievement Unlocked: Coolest Kid");
-                                cheevos++;
-                                allowLeaderboardCheevo2 = false;
-                                move200('achieve5');
-                            }
+                    alert("Achievement Unlocked: Cool Kids Club");
+                    cheevos++;
+                    allowLeaderboardCheevo = false;
+                    move200('achieve3');
+                } else if (cheevos >= 5 && allowLeaderboardCheevo2) {
+                    alert("Achievement Unlocked: Coolest Kid");
+                    cheevos++;
+                    allowLeaderboardCheevo2 = false;
+                    move200('achieve5');
+                }
                 console.log(width);
                 var xpVal;
                 var elem = document.getElementById("myBar");
@@ -446,68 +491,58 @@
                 var level = document.getElementById("lvlNum");
                 var rank = document.getElementById("rankNum");
                 var chevMent = document.getElementById("achNum");
-                if (onclick_id === 'pills-contact-tab' && allowCheevo1 == true) {
+                if (onclick_id == 'pills-contact-tab' && allowCheevo1 == true) {
                     xpVal = 200;
                     alert("Achievement Unlocked: Welcome!");
                     cheevos++;
                     allowCheevo1 = false;
-                }
-                else if (onclick_id === 'achieve2' && allowCheevo2 == true) {
+                } else if (onclick_id == 'achieve2' && allowCheevo2 == true) {
                     xpVal = 400;
                     alert("Achievement Unlocked: Mirror Mirror");
                     cheevos++;
                     allowCheevo2 = false;
-                }
-                else if (onclick_id === 'img1' && allowCheevo3 == true || onclick_id === 'img2' && allowCheevo3 == true || onclick_id === 'img3' && allowCheevo3 == true || onclick_id === 'img4' && allowCheevo3 == true || onclick_id === 'img5' && allowCheevo3 == true || onclick_id === 'img6' && allowCheevo3 == true) {
+                } else if (onclick_id === 'img1' && allowCheevo3 == true || onclick_id === 'img2' && allowCheevo3 == true || onclick_id === 'img3' && allowCheevo3 == true || onclick_id == 'img4' && allowCheevo3 == true || onclick_id === 'img5' && allowCheevo3 == true || onclick_id === 'img6' && allowCheevo3 == true) {
                     xpVal = 600;
                     alert("Achievement Unlocked: Home on the Range");
                     cheevos++;
                     allowCheevo3 = false;
-                }
-                else if (onclick_id === 'achieve3' && allowCheevo3 == false) {
+                } else if (onclick_id == 'achieve3' && allowCheevo3 == false) {
                     xpVal = 600;
                     cheevos++;
-                }
-                else if (onclick_id === 'achieve4' && allowCheevo4 == true) {
+                } else if (onclick_id == 'achieve4' && allowCheevo4 == true) {
                     xpVal = 800;
                     alert("Achievement Unlocked: Life of the Party");
                     cheevos++;
                     allowCheevo4 = false;
-                }
-                else if (onclick_id === 'achieve5' && allowCheevo5 == true) {
+                } else if (onclick_id == 'achieve5' && allowCheevo5 == true) {
                     xpVal = 1000;
                     alert("Achievement Unlocked: Under-Development");
                     cheevos++;
                     allowCheevo5 = false;
-                }
-                else if (onclick_id === 'achieve5' && allowCheevo5 == false) {
+                } else if (onclick_id == 'achieve5' && allowCheevo5 == false) {
                     xpVal = 1000;
                     cheevos++;
-                }
-                else {
+                } else {
                     xpVal = 0;
                 }
                 var lvlThreshold = levelNum * 1000;
                 xpValTotal += xpVal;
                 elemText.innerHTML = xpValTotal + " XP";
-                
-                chevMent.innerHTML = cheevos + " /15";
+
+                chevMent.innerHTML = cheevos + " / 16";
                 //console.log(cheevos);
                 if (cheevos == 1) {
                     rank.innerHTML = '#11';
-                }
-                else if (cheevos == 2) {
+                } else if (cheevos == 2) {
                     rank.innerHTML = '#9';
-                }
-                else if (cheevos == 3) {
+                } else if (cheevos == 3) {
                     rank.innerHTML = '#5';
-                }
-                else if (cheevos == 4) {
+                } else if (cheevos == 4) {
                     rank.innerHTML = '#2';
-                }
-                else if (cheevos >= 5) {
+                } else if (cheevos >= 5) {
                     rank.innerHTML = '#1';
                 }
+
 
                 var id = setInterval(frame, 10);
 
@@ -529,8 +564,7 @@
                                 cheevos++;
                                 allowLevelCheevo = false;
                                 move200('achieve3');
-                            }
-                            else if (levelNum >= 4 && allowLevelCheevo2) {
+                            } else if (levelNum >= 4 && allowLevelCheevo2) {
                                 alert("Achievement Unlocked: Lord");
                                 cheevos++;
                                 allowLevelCheevo2 = false;
@@ -542,8 +576,11 @@
                     }
 
                 }
-                /*if (onclick_id == achieve1 ||) {document.getElementById(onclick_id).style.display = "none";}*/
-                console.log(width + "galas");
+                if (cheevos >= 14) {
+                    cheevos = 15;
+                }
+
+
             }
 
         </script>
@@ -607,24 +644,21 @@
                     $("#nameText").text(name2);
                     $("#aboutText").text(contet2);
 
-                } 
-                
-                 else if (id.id == "prs3") {
+                } else if (id.id == "prs3") {
                     $("#nameText").text(name3);
                     $("#aboutText").text(contet3);
 
-                } 
-                else if (id.id == "prs4") {
+                } else if (id.id == "prs4") {
                     $("#nameText").text(name4);
                     $("#aboutText").text(contet4);
 
-                } 
-                else if (id.id == "prs5") {
+                } else if (id.id == "prs5") {
                     $("#nameText").text(name5);
                     $("#aboutText").text(contet5);
 
-                } 
+                }
             }
+
         </script>
 
 </body>
